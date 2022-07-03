@@ -24,7 +24,8 @@ public class LinkedList {
     public void addFirst(int x){
         Node toInsert = new Node(x, null);
         toInsert.next = this.head;
-        this.head = toInsert;
+        this.head = this.tail = toInsert;
+
     }
 
     public void removeFirst(){
